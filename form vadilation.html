@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			   
+			   <!--form element checkbox multiple value....-->
+			   
+			   <form  name = "myform" method= "post" onSubmit = " return validForm()">
+			<table style = "background:white; height:330px;">
+			<tr>
+			   <td> Name</td>
+			   <td>
+			         <input type = "text" name = "name" style = "width:200px; padding:3px;"/>		
+			  </td>	 
+			</tr>
+			
+			<tr>
+			   <td> Email</td>
+			   <td>
+			         <input type = "text" name = "email" style = "width:200px; padding:3px;"/>		
+			  </td>	 
+			</tr>
+			
+			<tr>
+			   <td> Telephone</td>
+			   <td>
+			         <input type = "text" name = "telephone" style = "width:200px; padding:3px;" />	
+                     <input type = "checkbox" name = "nocall"  onclick="enableDisable(this);"/>please don't call me.						 
+			  </td>	 
+			</tr>
+	
+			<tr>
+			   <td> How can we help you?</td>
+			   <td>
+			   <select name = "subject" value="">	        		
+			         <option>Select one</option>		
+			         <option>Customer service</option>		
+			         <option>comment </option>		
+			         <option>Questions</option>		
+			         <option>Others</option>
+			 </select>
+			  </td>	 
+			</tr>
+			
+			<tr>
+			   <td> Comment</td>
+			   <td>
+			         <input type = "text" name = "comment" style = "width:200px; padding:3px;"/>		
+			  </td>	 
+			</tr>
+			
+			<tr>
+			    <td><input type = "submit" value = "Submit" name = "submit"/ ></td>		
+			    <td><input type = "reset" value = "Refresh" name = "reset"/ ></td>		
+			</tr>
+			
+			<tr>
+			    <td></td>		
+			    <td><div id = "state"></div></td>		
+			</tr>
+			
+			</table>
+			</form>
+			
+			<script type = "text/javascript">
+			
+			function  validForm(){
+			var name = document.myform.name;
+			var email = document.myform.email;
+			var telephone = document.myform.telephone;
+			var nocall = document.myform.nocall;
+			var subject = document.myform.subject;
+			var comment = document.myform.comment;
+			
+                if(name.value==""){
+                 document.getElementById("state").innerHTML="Please enter your name";
+                 return false;
+                  }
+				  
+			 if(email.value==""){
+                 document.getElementById("state").innerHTML="Please enter your E-mail";
+                 return false;
+                  }
+				  
+				   if(email.value.indexOf("@","0")<0){
+                 document.getElementById("state").innerHTML="Please enter a valid E-mail address";
+                 return false;
+                  }
+				  
+				   if(email.value.indexOf(".","0")<0){
+                 document.getElementById("state").innerHTML="Please enter a valid E-mail address";
+                 return false;
+                  }
+				  
+				if(telephone.value=="" && nocall.checked==false){
+                 document.getElementById("state").innerHTML="Please enter your telephone number";
+                 return false;
+                  }  
+				  
+				   if(subject.selectedIndex<1){
+                 document.getElementById("state").innerHTML="Please tell us how can we help you";
+                 return false;
+                  }
+				  	       
+			    if( comment.value==""){
+                 document.getElementById("state").innerHTML="Please enter your opinion";
+                 return false;
+                  }
+				 
+			}
+			
+			function enableDisable(chkbox){
+			if(chkbox.checked == true){
+			document.myform.telephone.disabled =true;	
+			}else{
+			document.myform.telephone.disabled =false;	
+			}
+			
+			
+			
+			}
+			
+			
+		    </script>
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

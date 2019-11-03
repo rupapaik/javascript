@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+				<form  name= "frm">
+			<table>
+			<caption>Calculator</caption>
+			<tr>
+			   <td>Input data:</td>
+			   <td><input type ="text" name="getvalue"/> </td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "Absolute" onClick = "calculate(1)"/></td>
+			   <td><input type = "button" value = "Round" onClick = "calculate(2)"/></td>
+			</tr>
+		
+		    <tr>
+			   <td><input type = "button" value = "Sine" onClick = "calculate(3)"/></td>
+			   <td><input type = "button" value = "Cosine" onClick = "calculate(4)"/></td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "Tangent" onClick = "calculate(5)"/></td>
+			   <td><input type = "button" value = "Log" onClick = "calculate(6)"/></td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "Floor" onClick = "calculate(7)"/></td>
+			   <td><input type = "button" value = "Cell" onClick = "calculate(8)"/></td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "Square Root" onClick = "calculate(9)"/></td>
+			   <td><input type = "button" value = "Random" onClick = "calculate(10)"/></td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "Max" onClick = "calculate(11)"/></td>
+			   <td><input type = "button" value = "Min" onClick = "calculate(12)"/></td>
+			</tr>
+			
+			<tr>
+			   <td><input type = "button" value = "E" onClick = "calculate(13)"/></td>
+			   <td><input type = "button" value = "Pi" onClick = "calculate(14)"/></td>
+			</tr>
+			
+			<tr>
+			   <td>Result:</td>
+			   <td><input type ="text" name="showresult"/> </td>
+			</tr>
+			
+		</table>
+		</form>
+             <script type = "text/javascript">
+			 function calculate(process){
+			    with(document.frm) //form a akbare access korar jnno with use kora hoy.... frm.tbl.getresult = true;frm.tbl.getvalue = true;with(frm.tbl){getresult=true;getvalue=true;}
+			    switch(process){
+				case 1:
+				showresult.value = Math.abs(getvalue.value);
+				break;
+				
+				case 2:
+				showresult.value = Math.round(getvalue.value);
+				break;
+				
+				case 3:
+				showresult.value = Math.sin(convDegree(getvalue.value));
+				break;
+				
+				case 4:
+				showresult.value = Math.cos(convDegree(getvalue.value));
+				break;
+				
+				case 5:
+				showresult.value = Math.tan(convDegree(getvalue.value));
+				break;
+				
+				case 6:
+				showresult.value = Math.log(getvalue.value);
+				break;
+				
+				case 7:
+				showresult.value = Math.floor(getvalue.value);
+				break;
+				
+				case 8:
+				showresult.value = Math.ceil(getvalue.value);
+				break;
+				
+				case 9:
+				showresult.value = Math.sqrt(getvalue.value);
+				break;
+				
+				case 10:
+				showresult.value = Math.random();
+				break;
+				
+				case 11:
+				alert(Math.max(getvalue.value,prompt('Enter number','0'))+ ' is grater than the number');
+				break;
+				
+				// prompt ar vitore duita paramiter thake,0 default vabe dhare neya...
+				case 12:
+				alert(Math.min(getvalue.value,prompt('Enter number','0'))+ ' is smaller than the number');
+				break;
+				
+				case 13:
+				showresult.value = Math.E;
+				break;
+				
+				case 14:
+				showresult.value = Math.PI;
+				break;
+				
+				
+				
+				
+				}
+			 
+			 }
+			function convDegree(x){
+			return x*22/7/180;
+			}
+			   </script>
+			   
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

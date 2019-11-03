@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang ="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <div class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </div>
+            <div class="maincontent">
+               <script>
+			 var timeout;
+			 function timeoutTrigger(){
+			     document.getElementById("show").innerHTML= "The time  has been Triggered.........after 3 sec.";
+			 
+			 }
+                function timeInit(){
+				   timeout = setTimeout("timeoutTrigger()",3000);
+				   document.getElementById("show").innerHTML = "The timeout has been started.......";
+				   }
+				 function timeclear(){
+				    clearTimeout(timeout)
+			        document.getElementById("show").innerHTML= "The time  has been stop.........before 3 sec.";
+			 
+			 }
+				
+			   </script>
+			   <div>
+				<input type = "button" value = "Test Timeout" onclick = "timeInit()"/><input type = "button" value = "Clear Timeout" onclick = "timeclear()"/>
+				</div>
+				<div id = "show"></div>
+            </div>
+            <div class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </div>
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

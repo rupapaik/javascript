@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			
+			<!--form element button....-->
+			
+			
+			<form  action= "" method ="" name = "myForm">
+			<table style = "background:white;">
+			<tr>
+			<td><input type = "text" name = "inputbox" value = ""/ ></td>
+			<td><input type = "button" name = "button" value = "Click" onclick="testResult()"/ ></td><!--onclick a (this) use kora jay...testResult(this.form) hisebe... function a o ai vabe bosbe-->
+			<td></td>
+			</tr>
+			</table>
+			</form>
+			
+             <script type ="text/javascript">
+			function testResult(){
+			var testvar = myForm.inputbox.value;
+			if(testvar == ""){
+			alert("please type something....");
+			}else{
+			alert("You Typed...."+testvar);
+			}
+			}
+			   </script> 
+			 
+			
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

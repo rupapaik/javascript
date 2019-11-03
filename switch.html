@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang ="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <div class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </div>
+            <div class="maincontent">
+			
+			
+			<input id = "codeText" type="text"/>
+			<button onclick = "checkCoding()">Check</button>
+			
+			<div id = "show" ></div>
+			
+               <script>
+                  function checkCoding(){
+				  var txt;
+				  var coding = document.getElementById( "codeText").value;
+				  switch(coding){
+				  
+				  case "java":
+				  txt = "I Love Java";
+				  break;
+				  
+				   case "php":
+				  txt = "I Love php";
+				  break;
+				  
+				   case "c#":
+				  txt = "I Love c#";
+				  break;
+				  
+				   case "html":
+				  txt = "I Love html";
+				    break;
+					
+				  default:
+				  txt = "unknown...";
+				
+				  }
+				  document.getElementById( "show").innerHTML = txt;
+			  }	
+			   </script>
+            </div>
+            <div class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </div>
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+{% for each_content_item in content_content_item_list %}
+                                                    {% if each_content_item.content_item_type == 1 %}
+                                                        {% if forloop.first %}
+                                                            <p class="has-drop-cap">
+                                                                {{ each_content_item.item_text|striptags }}
+                                                            </p>
+                                                        {% else %}
+                                                            <p>
+                                                                {{ each_content_item.item_text|striptags }}
+                                                            </p>
+                                                        {% endif %}
+                                                    {% endif %}
+                                                    {% if each_content_item.content_item_type == 2 %}
+                                                        <h2>
+                                                            {{ each_content_item.item_text|striptags }}
+                                                        </h2>
+                                                    {% endif %}
+                                                    {% if each_content_item.content_item_type == 50 %}
+                                                        <a href=" {{ each_content_item.url|striptags }}">
+                                                            {{ each_content_item.item_text|striptags }}
+                                                        </a>
+                                                        <br>
+                                                    {% endif %}
+                                                {% endfor %}

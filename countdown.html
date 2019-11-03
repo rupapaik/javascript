@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <div class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </div>
+            <div class="maincontent">
+               <script>
+			   
+			 var countdown;
+			 var countdownNumber;
+			 
+			 function countdownInit(){
+			      countdownNumber = 101;
+				  countdownTrigger();
+			   
+			 }
+			 function countdownTrigger(){
+			 if(countdownNumber > 0){
+			 countdownNumber -- ;
+			   document.getElementById("show").innerHTML = countdownNumber;
+			 	 if(countdownNumber> 0){
+				countdown = setTimeout("countdownTrigger()",1000);
+				 }
+			   }
+			 } 
+			
+                
+				 function countdownClear(){
+				    clearTimeout(countdown);
+			        document.getElementById("show").innerHTML= "The time  has been stop........";
+			 
+			 }
+				
+			   </script>
+			   <div>
+				<input type = "button" value = "Start Timeout" onclick = "countdownInit()"/>
+				<input type = "button" value = "Stop Timeout" onclick = "countdownClear()"/>
+				</div>
+				<div id = "show"></div>
+            </div>
+            <div class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </div>
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			   
+			   <!--form element checkbox multiple value....-->
+			   
+			   <form  name = "myForm" onSubmit = "testCode()">
+			<table style = "background:white;">
+			
+			<td>Select:</td>
+			<tr>
+			   <td>
+			         <input type = "checkbox" name = "chkbox" value = "JAVA" />JAVA<br/>		
+			         <input type = "checkbox" name = "chkbox" value = "HTML" />HTML<br/>			
+			         <input type = "checkbox" name = "chkbox" value = "CSS" />CSS<br/>			
+			         <input type = "checkbox" name = "chkbox" value = "PHP" />PHP<br/>		
+			         <input type = "checkbox" name = "chkbox" value = "C#" />C#<br/>			
+			         <input type = "checkbox" name = "chkbox" value = "JAVASCRIPT" />JAVASCRIPT<br/>			
+			         <input type = "checkbox" name = "chkbox" value = "LARAVEL" />LARAVEL	
+			  </td>	 
+			</tr>
+			
+			<tr>
+			    <td><input type = "submit" name = "Submit"/ ></td>		
+			    <td><input type = "reset" name = "Refresh"/ ></td>		
+			</tr>
+			
+			</table>
+			</form>
+			
+			<script type = "text/javascript">
+			function testCode(){
+			document.write("You select: "+selectCode());
+			}
+			
+			function selectCode(){
+			var  cd = "<ul>";
+			for(i=0;i<=6;i++){
+			var myvalue = document.myForm.chkbox[i];
+			if(myvalue.checked){
+			cd +="<li>"+myvalue.value;
+			
+		}
+			
+	}
+			cd += "</ul>";
+			return cd;
+}
+		    </script>
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

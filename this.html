@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang ="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <section class="maincontent">
+			<div id = "state">Click Here</div>
+			<hr/>				   
+      <script>
+			  function liveProject(){
+			     var a = 200;
+			     this.x = 400;
+			     this.y = 600;
+			     this.z = function(){
+			       return this.x + this.y;
+			 }
+		}   
+			 var lp = new liveProject();
+			document.write(lp.z());
+			  </script>
+            </section>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </footer>
+        </section>
+ 
+
+   </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang ="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <div class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </div>
+            <div class="maincontent">
+               <script>
+			  /*
+			   //built in reverse methods starts....
+                  function revMe(s){
+				  return s.split("").reverse().join("");
+				  } 
+				    var x = "1 2 3 4 5 6 7";
+					var x = "A B C D E F";
+					var rv = revMe(x);
+					document.write(rv);
+					 //built in reverse methods ends....
+				*/
+					  
+					 //own reverse methods starts....
+					 
+					 String.prototype.revMe = function(){
+					 var s = "";
+					 var i = this.length;
+					 while(i>0){
+					 s += this.substring(i-1,i);
+					 i--;
+					 }
+					 return s;
+					} 
+					 
+					 var x = "A B C D E F";
+					document.write(x.revMe());
+					 
+					 //own reverse methods ends....
+				
+					
+					/*
+					 //how works substring start.....
+					 
+					 function myFunction(){
+					 var str = "Rupa Paik";
+					 var res = str.substring(1,4);
+					 document.write(res);
+					 }
+					 myFunction(); 
+					 //how works substring end.....
+					 
+					 */
+			   </script>
+            </div>
+            <div class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </div>
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

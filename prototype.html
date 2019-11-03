@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang ="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <section class="maincontent">
+				   
+      <script>
+			  function totalNum(a,b){
+			    
+			     this.x = a;
+			     this.y = b;
+			     this.sum = function(){
+			       return this.x + this.y;
+			 }
+		}   
+		 function totalProduct(a,b){
+			    
+			     this.x = a;
+			     this.y = b;
+			     this.product = function(){
+			       return this.x * this.y;
+			 }
+		} 
+          totalNum.prototype = new totalProduct();
+		  
+			 var tn = new totalNum(22,244);
+			 document.write(tn.product());
+			//document.write(tn.toString());
+			  </script>
+            </section>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2>
+            </footer>
+        </section>
+ 
+
+   </body>
+</html>

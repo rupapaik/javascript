@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			   
+			   <!--form element checkbox....-->
+			   
+			   <form  action= "" method ="" name = "myForm">
+			<table style = "background:white;">
+			
+			<tr>
+			    <td><input type = "text" name = "t1" onchange ="doCal(this.form, this.name)" /></td>		
+			</tr>
+			
+			<tr>
+			    <td><input type = "checkbox" name = "chkbox" onclick ="doCal(this.form, this.name)" / ></td>		
+			</tr>
+			
+			<tr>
+			    <td><input type = "text" name = "result" onchange ="doCal(this.form, this.name)" / ></td>		
+			</tr>
+			
+			<tr>
+			    <td><input type = "reset" name = "Refresh"/ ></td>		
+			</tr>
+			
+			</table>
+			</form>
+			
+			<script type = "text/javascript">
+			function doCal(form,pfield){
+			if(pfield == "result"){
+			if(form.chkbox.checked){
+			form.t1.value = math.sqrt(form.result.value);
+			}
+			else{
+			form.t1.value = form.result.value/2;
+			}
+			
+			}else{
+			if(form.chkbox.checked){
+			form.result.value = form.t1.value * form.t1.value;
+			}
+		    else{
+			form.result.value = form.t1.value*2;
+			}
+			}
+			}
+			
+			</script>
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

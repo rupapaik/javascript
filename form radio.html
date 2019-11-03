@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			   
+			   <!--form element checkbox multiple value....-->
+			   
+			   <form  name = "myForm" onSubmit = "testCode()">
+			<table style = "background:white;">
+			
+			<td>Select one:</td>
+			<tr>
+			   <td>
+			         <input type = "radio" name = "rdbox" value = "JAVA" />JAVA<br/>		
+			         <input type = "radio" name = "rdbox" value = "HTML" />HTML<br/>			
+			         <input type = "radio" name = "rdbox" value = "CSS" />CSS<br/>			
+			         <input type = "radio" name = "rdbox" value = "PHP" />PHP<br/>		
+			         <input type = "radio" name = "rdbox" value = "C#" />C#<br/>			
+			         <input type = "radio" name = "rdbox" value = "JAVASCRIPT" />JAVASCRIPT<br/>			
+			         <input type = "radio" name = "rdbox" value = "LARAVEL" />LARAVEL	
+			  </td>	 
+			</tr>
+			
+			<tr>
+			    <td><input type = "submit" value = "Submit"/ ></td>		
+			    <td><input type = "reset" value = "Refresh"/ ></td>		
+			</tr>
+			
+			</table>
+			</form>
+			
+			<script type = "text/javascript">
+			function testCode(){
+			document.write("You select: "+selectCode());
+			}
+			
+			function selectCode(){
+			var  cd = "<ul>";
+			for(i=0;i<=6;i++){
+			var getChecked = document.myForm.rdbox[i];
+			if(getChecked.checked){
+			return getChecked.value;
+			
+		}	
+     }	
+   }
+		    </script>
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

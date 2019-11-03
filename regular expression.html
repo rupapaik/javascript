@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent">
+			
+			<!--Regular expression for (search string)...
+			
+			<button onclick =" myreg()">Search</button>
+            <div id = "show"></div>
+			<script type ="text/javascript">
+			function myreg(){
+			var str = "Traning with live project";
+			var sr  = str.search(/project/i);
+			document.getElementById("show").innerHTML = sr;
+			}
+			
+			</script>
+			-->
+			
+			
+			<!--Regular expression for (repalce) string...
+			
+			<button onclick =" myreg()">Replace</button>
+            <div id = "show">We live in India</div>
+			<script type ="text/javascript">
+			function myreg(){
+			var str = document.getElementById("show").innerHTML;
+			var input = str.replace("India", "Bangladesh");
+			document.getElementById("show").innerHTML = input;
+			}
+			</script>
+			-->
+			
+			
+			<!--Regular expression  (test method ) match for search...
+			
+			<button onclick =" myreg()">Test Now</button>
+            <div id = "str">We live in Bangladesh</div>
+            <div id = "show"></div>
+			
+			<script type ="text/javascript">
+			function myreg(){
+			var txt = document.getElementById("str").innerHTML;
+			document.getElementById("show").innerHTML = /l/.test(txt);
+			}
+			</script>
+			-->
+			
+			
+			<!--Regular expression  (exec method ) for search...
+			
+			<button onclick =" myreg()">Test Now</button>
+            <div id = "str">We live in Bangladesh</div>
+            <div id = "show"></div>
+			
+			<script type ="text/javascript">
+			function myreg(){
+			var txt = document.getElementById("str").innerHTML;
+			document.getElementById("show").innerHTML = /B/.exec(txt);
+			}
+			</script>
+			-->
+			
+			
+			<!--Regular expression for get only number from string And number (match method ) for search...
+			
+			
+			<table style = "width:400px;margin:110px;margin-left:250px;padding:10px;border:1px solid black;background:white;">
+			
+			<tr>
+			   <td>Input data:</td>
+			   <td><input type ="text" id="getValue"/style ="width:200px;padding:7px;"> </td>
+			</tr>
+			
+			<tr>
+			<td></td>
+			   <td><input type = "button" value = "Check" onClick = "getNumber()"/></td>	   
+			</tr>
+		
+			<tr>
+			   <td>Result:</td>
+			   <td><textarea id = "showValue"style ="width:200px;padding:7px; height:150px;"></textarea> </td>
+			</tr>
+			</table>
+			<script type ="text/javascript">
+			
+			/*
+			   Agula match korabo
+			
+			 Mango-55 Banana-100 Apple-68098
+			90SH5759DJDSH945
+			$1 $2 $112 $345 $5546 ABC0(200)
+			*/
+		
+			 function getNumber(){
+			 document.getElementById("showValue").value = "";//output ar ager  input value gula remove korar jonno
+			 var getString = document.getElementById("getValue").value;
+			 var result = getString.match(/\d+/g);//only d akta kore num nebe..1,2,3..d+ je koyta kore ache sai koyta kore nebe .. 55,100..g = global match
+			 if(result !=null){
+			 for(var i=0; i<result.length;i++){
+			  document.getElementById("showValue").value += result[i]+"\n";//niche show krar jnno 
+		   }
+		}
+	 }
+			 </script>
+			 
+			 -->
+			 
+			 
+			 
+			 
+			</div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

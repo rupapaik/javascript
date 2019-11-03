@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+         <title>Javascript Fundamentals</title>
+         <meta charset="UFT-8"/>
+         < html lang="en">
+         <link rel = "stylesheet" type = "text/css" href="main.css">
+     </head>
+  <body> 
+        <section class="content">
+            <header class= "header">
+               <h2> <script> document.write ("Javascript Fundamentals");</script></h2>
+            </header>
+            <div class="maincontent"> 
+			
+			   <!--function and return type-->		   
+			   <script>
+			   function retFunc(){
+			      return{project:3};
+			   }
+			   document.write(typeof retFunc());//return type object
+			   document.write(typeof retFunc);//return type function
+			   </script>
+			   
+			   <br/>
+			    <!--primitive and object type-->		
+			   <script>
+			   var x = new Number("100");//object
+			  // var x = Number("100");
+			   var y = 100;
+			   document.write(x===y);
+			   </script>
+			   </br>
+			    <!--Truth and Equality type-->
+			   <script>
+			   var a = true;// true=1
+			   //var b = false;//false=0
+			   var b = true;
+			   var x = a+b;
+			   var y = 10;
+			   var result = y-x;
+			   document.write(result);
+			   </script>
+			   
+			    <!--Instanceof operator-->
+				<script>
+				
+				var x = new String("Bangladesh");//object hole true return krbe,nahole false return krbe... 
+				var y =  String("Bangladesh");
+				console.log(x instanceof String);
+				console.log(y instanceof String);
+				console.log(x);
+				console.log(y);
+				</script>
+				
+           </div>
+            <footer class="footer">
+               <h2><script> document.write ("www.javascript.com");</script></h2> 
+			   </footer> 
+        </section>
+ 
+
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
